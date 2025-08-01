@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataverso</title>
+    <link rel="shortcut icon" href="source/logo.png" type="image/x-png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="source/logo.png" alt="" width="50px">
+            <a href="index.html" class="bold">Dataverso</a>
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="#" class="bold">Carrinho</a>
+        </nav>
+    </header>
+    <main>
+        <section id="carrinho">
+            <h1>Carrinho</h1>
+            <div id="compras">
+                
+            </div>
+            <div class="compra" id="compra">
+                    <div class="compra_items">
+                        <img src="source/logo.png" class="imagem" alt="">
+                        <p class="nome">Livro 1</p>
+                        <p class="valor">Valor único: R$99,90</p>
+                    </div>
+                    <div class="compra_variavel">
+                        <button class="diminuir_quantidade">-</button>
+                        <input type="number" name="quantidade"  min="1" max="99" class="quantidade">
+                        <button class="aumentar_quantidade">+</button>
+                        <p class="valor_total">R$99,90</p>
+                        <a href="#" onclick="">
+                            <img src="source/lixeira.png" alt="" class="lixeira">
+                        </a>
+                    </div>
+
+                </div>
+            <p id="valor_total">Valor total do carrinho: R$99,90</p>
+            <button id="finalizar">Finalizar compra</button>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <img src="source/logo.png" alt="" width="50px">
+            <p>© 2025 Dataverso. Todos os direitos reservados. </p>
+        </div>
+    </footer>
+</body>
+<script src="scripts/conteudo.js"></script>
+<script src="scripts/script.js"></script>
+<script>carregar_carrinho()</script>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataverso</title>
+    <link rel="shortcut icon" href="source/logo.png" type="image/x-png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="source/logo.png" alt="" width="50px">
+            <a href="#" class="bold">Dataverso</a>
+        </div>
+        <nav>
+            <a href="#" class="bold">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="carrinho.html">Carrinho</a>
+        </nav>
+    </header>
+    <main>
+        <section id="universo">
+            <h1>Dataverso</h1>
+            <h2>Explore o Universo da Leitura</h2>
+        </section>
+        <section id="buscados">
+            <h2>Livros mais buscados</h2>
+            <div id="itens">
+                
+            </div>
+            <div id="item" class="item" hidden>
+                <a href="#">
+                    <img src="" alt="">
+                    <p class="nome"></p>
+                    <p class="valor"></p>
+                </a>
+                <button>Adicionar ao carrinho</button>
+            </div>
+            <a href="catalogo.html" id="explorar">Explorar Catálogo</a>
+        </section>
+        <section id="bemvindo">
+            <h2>Bem-vindo(a) ao Dataverso!</h2>
+            <p>Sua porta de entrada para um universo de histórias fantásticas e futuros inimagináveis.
+                Explore nosso catálogo e descubra sua próxima aventura.
+            </p>
+        </section>
+        <div id="modal_escondido" class="modal-overlay">
+            <div class="modal-conteudo">
+                <img src="source/harry_potter.jpg" alt="">
+                <div>
+                    <p class="nome"></p>
+                    <p class="descricao"></p>
+                    <p class="valor"></p>
+                    <button id="modal_button">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <img src="source/logo.png" alt="" width="50px">
+            <p>© 2025 Dataverso. Todos os direitos reservados. </p>
+        </div>
+    </footer>
+</body>
+<script src="scripts/conteudo.js"></script>
+<script src="scripts/script.js"></script>
+<script>carregar_items(4)</script>
+</html>
