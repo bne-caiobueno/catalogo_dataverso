@@ -109,7 +109,11 @@ function carregar_carrinho(){
     document.getElementById("valor_total").textContent = "R$" + valorTotal.toFixed(2);
 }
 
-
+function limpar(){
+    carrinho = [];
+    localStorage.clear();
+    carregar_carrinho();
+}
 
 function fechar_modal(){
     const modal_base = document.querySelector("#modal");
